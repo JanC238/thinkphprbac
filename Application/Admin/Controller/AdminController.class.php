@@ -9,7 +9,6 @@
 namespace Admin\Controller;
 
 
-use Admin\Common\Threads\MyMailThread;
 use Think\Controller;
 
 class AdminController extends Controller
@@ -24,9 +23,12 @@ class AdminController extends Controller
         $this->_model = D('Admin');
     }
 
-
+    /**
+     * 会员列表
+     */
     public function index()
     {
+        echo session('USER_INFO')['name'];
         $admins = $this->_model->select();
         $this->assign('admins', $admins);
         $this->display('index');
@@ -58,7 +60,7 @@ class AdminController extends Controller
     public function login()
     {
         if (IS_POST) {
-            $data = $this->_model->create();
+            $data = $this->_model->create('','login');
             if ($data === false) {
                 $this->error(getError($this->_model));
             }
@@ -72,6 +74,10 @@ class AdminController extends Controller
         }
     }
 
+    /**
+     * 删除
+     * @param $id
+     */
     public function del($id)
     {
         $res = $this->_model->delete($id);
@@ -92,6 +98,35 @@ class AdminController extends Controller
             $this->error(getError($this->_model), U('Admin/login'));
         }
         $this->success('激活成功', U('Admin/login'));
+    }
+
+    /**
+     * 修改
+     * @param $id
+     */
+    public function edit($id)
+    {
+        if (IS_POST) {
+            $data = $this->_model->create();
+            $res = $this->_model->save($data);
+            if ($res === false) {
+                $this->error('修改失败了');
+            }
+            $this->success('修改成功', U('Admin/index'));
+        } else {
+            $data = $this->_model->find($id);
+            $this->assign('data',$data);
+            $this->display('edit');
+        }
+    }
+
+    /**
+     * 退出
+     */
+    public function logout()
+    {
+        session('USER_INFO',null);
+        $this->success('已退出', U('Admin/login'));
     }
 
 //    public function pushAd()

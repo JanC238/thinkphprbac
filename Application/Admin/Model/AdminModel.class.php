@@ -24,7 +24,7 @@ class AdminModel extends Model
     );
 
     protected $_auto = array(
-        ['last_login_ip', 'get_client_ip', self::MODEL_UPDATE, 'function',],
+        ['last_login_ip', 'get_client_ip', 'login', 'function',],
         ['salt', '\Org\Util\String::RandString', 'register', 'function'],
         ['status', 0, 'register']
     );

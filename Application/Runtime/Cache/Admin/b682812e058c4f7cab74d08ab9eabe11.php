@@ -7,6 +7,7 @@
 <body>
 
 
+    <a href="<?php echo U('Admin/logout');?>" class="btn btn-info pull-right">退出</a>
     <table class="table table-bordered">
         <tr>
             <th>id</th>
