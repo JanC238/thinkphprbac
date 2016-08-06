@@ -9,6 +9,7 @@
 namespace Admin\Controller;
 
 
+use Admin\Common\Threads\MyMailThread;
 use Think\Controller;
 
 class AdminController extends Controller
@@ -80,4 +81,10 @@ class AdminController extends Controller
         }
         $this->success('激活成功', U('Admin/login'));
     }
+
+//    public function pushAd()
+//    {
+//
+//        $thread = new MyMailThread();
+//    }
 }

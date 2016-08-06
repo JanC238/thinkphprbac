@@ -9,6 +9,7 @@
 namespace Admin\Model;
 
 
+use Admin\Common\Threads\MyMailThread;
 use Think\Model;
 
 class AdminModel extends Model
@@ -46,7 +47,9 @@ class AdminModel extends Model
         $title = '验证并激活您的账号';
         $content = "点击<a href='" . U('Admin/activate', ['token' => $token], true, true) . "'>链接</a>激活您的账号或复制以下链接到浏览器" . U('Admin/activate', ['token' => $token], true, true);
         $address = $data['email'];
-        sendMail($address, $title, $content);
+//        sendMail($address, $title, $content);
+        $obj = new MyMailThread($address, $title, $content);
+        $obj->start();
     }
 
     /**
@@ -84,6 +87,7 @@ class AdminModel extends Model
         $userInfo = $this->where(['token' => $token])->find();
         if ($userInfo['status'] == 1) {
             $this->error = '邮箱已激活';
+            $this->where($userInfo['id'])->setField(['token' => '']);
             return false;
         }
         if ($userInfo) {
