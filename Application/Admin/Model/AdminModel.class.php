@@ -72,7 +72,7 @@ class AdminModel extends Model
         }
         //>>登录成功时将最后登录ip录入
         $ip = get_client_ip();
-        $this->where($res['id'])->save(['last_login_ip' => $ip]);
+        $this->where(['id' => $res['id']])->save(['last_login_ip' => $ip]);
 
         session('USER_INFO', $res);
     }
@@ -87,11 +87,11 @@ class AdminModel extends Model
         $userInfo = $this->where(['token' => $token])->find();
         if ($userInfo['status'] == 1) {
             $this->error = '邮箱已激活';
-            $this->where($userInfo['id'])->setField(['token' => '']);
+            $this->where(['id' => $userInfo['id']])->setField(['token' => '']);
             return false;
         }
         if ($userInfo) {
-            if (!$this->where($userInfo['id'])->setField(['status' => 1])) {
+            if (!$this->where(['id' => $userInfo['id']])->setField(['status' => 1])) {
                 $this->error = '激活失败,请重试';
                 return false;
             };

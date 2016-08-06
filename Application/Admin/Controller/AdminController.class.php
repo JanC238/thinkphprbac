@@ -27,6 +27,8 @@ class AdminController extends Controller
 
     public function index()
     {
+        $admins = $this->_model->select();
+        $this->assign('admins', $admins);
         $this->display('index');
     }
 
@@ -64,9 +66,19 @@ class AdminController extends Controller
             if ($res === false) {
                 $this->error(getError($this->_model));
             }
-            echo '登录成功';
+            $this->success('登录成功', U('Admin/index'));
+        } else {
+            $this->display('login');
         }
-        $this->display('login');
+    }
+
+    public function del($id)
+    {
+        $res = $this->_model->delete($id);
+        if ($res === false) {
+            $this->ajaxReturn('fail');
+        }
+        $this->ajaxReturn('success');
     }
 
     /**
