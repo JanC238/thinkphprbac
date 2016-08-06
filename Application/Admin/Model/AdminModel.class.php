@@ -44,12 +44,12 @@ class AdminModel extends Model
             $this->error = '注册失败';
             return false;
         };
-        $title = '验证并激活您的账号';
-        $content = "点击<a href='" . U('Admin/activate', ['token' => $token], true, true) . "'>链接</a>激活您的账号或复制以下链接到浏览器" . U('Admin/activate', ['token' => $token], true, true);
-        $address = $data['email'];
-//        sendMail($address, $title, $content);
-        $obj = new MyMailThread($address, $title, $content);
-        $obj->start();
+//        $title = '验证并激活您的账号';
+//        $content = "点击<a href='" . U('Admin/activate', ['token' => $token], true, true) . "'>链接</a>激活您的账号或复制以下链接到浏览器" . U('Admin/activate', ['token' => $token], true, true);
+//        $address = $data['email'];
+////        sendMail($address, $title, $content);
+//        $obj = new MyMailThread($address, $title, $content);
+//        $obj->start();
     }
 
     /**

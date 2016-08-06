@@ -21,6 +21,8 @@ return array(
     'TMPL_PARSE_STRING' => array(
         '__CSS__' => BASE_URL . '/Public/Admin/css',
         '__JS__' => BASE_URL . '/Public/Admin/js',
+        '__ZTREE__' => BASE_URL . '/Public/ext/ztree',
+        '__TREEGRID__' => BASE_URL . '/Public/ext/treegrid',
     ),
     'DEFAULT_CONTROLLER' => 'Admin',
     /* URL设置 */

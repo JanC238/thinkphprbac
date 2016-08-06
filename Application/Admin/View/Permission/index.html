@@ -1,0 +1,47 @@
+<extend name="Layout:admin_base"/>
+<block name="css">
+    <link href="__TREEGRID__/css/jquery.treegrid.css" rel="stylesheet" type="text/css" />
+</block>
+<block name="content">
+    <a href="{:U('add')}" class="btn btn-info pull-right">添加</a>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <table class="table table-bordered tree">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>操作</th>
+            </tr>
+            <volist name="datas" id="data">
+                <tr class="treegrid-{$data.id} <neq name='data.parent_id' value='0'>treegrid-parent-{$data.parent_id}</neq>">
+                    <td>{$data.id}</td>
+                    <td>{$data.name}</td>
+                    <td>
+                        <a href="{:U('Permission/edit',['id'=>$data['id']])}" class="btn btn-info">修改</a>
+                        <a href="javascript:;" class="btn btn-danger del" role_id="{$data.id}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+    </div>
+
+</block>
+<block name="js">
+    <script src="__TREEGRID__/js/jquery.treegrid.js"></script>
+
+    <script>
+        $(function () {
+            $('.tree').treegrid();
+            $('.del').click(function () {
+                var obj = $(this);
+                var id = obj.attr('role_id');
+                var url = "{:U('Role/del')}";
+                $.post(url, {id: id}, function (response) {
+                    if (response == 'success') {
+                        obj.parent().parent().fadeOut();
+                    }
+                }, 'json')
+            });
+        });
+    </script>
+</block>
