@@ -1,6 +1,13 @@
-<extend name="Layout:admin_base"/>
-<block name="content">
-    <form action="{:U('admin/register')}" method="post">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN">
+<script src="/Public/Admin/js/jquery-3.1.0.min.js"></script>
+<link rel="stylesheet" href="/Public/Admin/css/bootstrap.min.css">
+
+
+<body>
+<a href="<?php echo U('Admin/logout');?>" class="btn btn-info pull-right">退出</a>
+
+    <form action="<?php echo U('admin/register');?>" method="post">
         <div class="form-group">
             <label for="exampleInputEmail1">name</label>
             <input type="text" class="form-control name" name="name" placeholder="username">
@@ -18,8 +25,9 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
-</block>
-<block name="js">
+
+
+
     <script>
         var date = new Date();
         console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
@@ -68,4 +76,5 @@
             }
         })
     </script>
-</block>
+
+</html>
