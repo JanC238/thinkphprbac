@@ -40,6 +40,9 @@
             var re = new RegExp(reg);
             return re.test(node);
         }
+        /*
+         邮箱验证方法
+         */
         function checkEmail(node) {
             var reg = /^[\w0-9]+@[a-zA-Z0-9]+(\.[a-zA-Z]+){1,2}$/;
             return reg.test(node);
@@ -60,7 +63,9 @@
                 $(".warn-span").html("数据不合法");
             }
         });
-
+        /**
+         * 验证邮箱
+         */
         $('.email').change(function () {
             var val = $(this).val();
             if (val == '') {
