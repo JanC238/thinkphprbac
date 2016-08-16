@@ -35,7 +35,7 @@
             $('.del').click(function () {
                 var obj = $(this);
                 var id = obj.attr('role_id');
-                var url = "{:U('Role/del')}";
+                var url = "{:U('Permission/del')}";
                 $.post(url, {id: id}, function (response) {
                     if (response == 'success') {
                         obj.parent().parent().fadeOut();

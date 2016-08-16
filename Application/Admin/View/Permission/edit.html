@@ -47,6 +47,13 @@
             var datasZtree = $.fn.zTree.init($("#permission"), setting, datas);
 //>>展开所有节点
             datasZtree.expandAll(true);
+            <present name="data">
+            //>>获取父级分类
+            var parentNode = datasZtree.getNodeByParam('id',{$data.parent_id});
+            datasZtree.selectNode(parentNode);
+            $('#parent_name').val(parentNode.name);
+            </present>
         });
+
     </script>
 </block>

@@ -54,7 +54,12 @@
             var datasZtree = $.fn.zTree.init($("#permission"), setting, datas);
 //>>展开所有节点
             datasZtree.expandAll(true);
+            <?php if(isset($data)): ?>//>>获取父级分类
+            var parentNode = datasZtree.getNodeByParam('id',<?php echo ($data["parent_id"]); ?>);
+            datasZtree.selectNode(parentNode);
+            $('#parent_name').val(parentNode.name);<?php endif; ?>
         });
+
     </script>
 
 </html>

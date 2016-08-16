@@ -1,0 +1,1573 @@
+[ 2016-08-16T14:31:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008981s ]
+
+[ 2016-08-16T14:31:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-08-16T14:31:44+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-08-16T14:32:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0531s ]
+SQL: SELECT * FROM `admin`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007265s ]
+
+[ 2016-08-16T14:32:09+08:00 ] 127.0.0.1 /Permission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0456s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2016-08-16T14:32:55+08:00 ] 127.0.0.1 /Permission/edit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `permission` WHERE `id` <> '3' AND `parent_id` <> '3' ORDER BY lft asc  [ RunTime:0.0331s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: url F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-08-16T14:32:57+08:00 ] 127.0.0.1 /Permission/edit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '123' AND `id` <> '3' LIMIT 1   [ RunTime:0.0555s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1146:Table 'rbac.my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `my_s_q_l`
+ERR: 1146:Table 'rbac.my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `my_s_q_l`
+
+[ 2016-08-16T14:34:16+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-08-16T14:34:20+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-08-16T14:34:21+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-08-16T14:34:23+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1146:Table 'rbac.my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `my_s_q_l`
+ERR: 1146:Table 'rbac.my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `my_s_q_l`
+
+[ 2016-08-16T14:36:11+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1146:Table 'rbac.db_my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_my_s_q_l`
+ERR: 1146:Table 'rbac.db_my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_my_s_q_l`
+
+[ 2016-08-16T14:36:22+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1146:Table 'rbac.my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `my_s_q_l`
+ERR: 1146:Table 'rbac.my_s_q_l' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `my_s_q_l`
+
+[ 2016-08-16T14:37:02+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1146:Table 'rbac.db_mysql' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_mysql`
+ERR: 1146:Table 'rbac.db_mysql' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `db_mysql`
+
+[ 2016-08-16T14:37:47+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+
+[ 2016-08-16T14:38:02+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+
+[ 2016-08-16T14:38:05+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+
+[ 2016-08-16T14:38:09+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+ERR: 1054:Unknown column 'level' in 'field list'
+ [ SQL语句 ] : SELECT parent_id, lft, rght, level FROM permission WHERE id = 0
+
+[ 2016-08-16T14:38:19+08:00 ] 127.0.0.1 /Permission/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1231' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 0 [ RunTime:0.0005s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getOne() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 195 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 155 行.
+SQL: SELECT MAX(rght) FROM permission [ RunTime:0.0421s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 224 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 9, lft + 2, lft) WHERE rght >= 9 [ RunTime:0.0245s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::insert() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 232 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 69 行.
+SQL: INSERT INTO permission SET name="1231",parent_id="0",permission_url="",lft="9",rght="10",lvl="1" [ RunTime:0.1004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2016-08-16T14:38:20+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2016-08-16T14:38:26+08:00 ] 127.0.0.1 /Permission/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` WHERE `id` <> '2' AND `parent_id` <> '2' ORDER BY lft asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: url F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-08-16T14:38:27+08:00 ] 127.0.0.1 /Permission/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '测试1' AND `id` <> '2' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `permission` SET `name`='测试1',`parent_id`='0',`permission_url`='' WHERE `id` = 2 [ RunTime:0.0443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2016-08-16T14:38:29+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-08-16T14:38:30+08:00 ] 127.0.0.1 /Permission/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` WHERE `id` <> '1' AND `parent_id` <> '1' ORDER BY lft asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: url F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-08-16T14:38:31+08:00 ] 127.0.0.1 /Permission/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '测试' AND `id` <> '1' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 1 [ RunTime:0.0004s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 0 [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getOne() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 310 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 155 行.
+SQL: SELECT MAX(rght) FROM permission [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 469 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: 
+				UPDATE permission
+				SET
+					lft = IF(
+						rght <= 5,
+						lft + 5,
+						IF(
+							lft > 5,
+							lft - 2, lft
+						)
+					),
+					lvl = IF(
+						rght <= 5,
+						lvl + -1,
+						lvl
+					),
+					rght = IF(
+						rght <= 5,
+						rght + 5,
+						IF(
+							rght <= 10,
+							rght - 2,
+							rght
+						)
+					),
+					parent_id = IF(
+						id = 1,
+						0,
+						parent_id
+					)
+				WHERE
+					rght > 4
+					AND lft <= 10 [ RunTime:0.1699s ]
+SQL: UPDATE `permission` SET `name`='测试',`parent_id`='0',`permission_url`='' WHERE `id` = 1 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2016-08-16T14:38:32+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2016-08-16T14:38:34+08:00 ] 127.0.0.1 /Permission/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` WHERE `id` <> '1' AND `parent_id` <> '1' ORDER BY lft asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: url F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-08-16T14:38:35+08:00 ] 127.0.0.1 /Permission/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0175s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '测试' AND `id` <> '1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `permission` SET `name`='测试',`parent_id`='0',`permission_url`='' WHERE `id` = 1 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-08-16T14:38:36+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-08-16T14:38:39+08:00 ] 127.0.0.1 /Permission/edit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` WHERE `id` <> '3' AND `parent_id` <> '3' ORDER BY lft asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: url F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-08-16T14:38:41+08:00 ] 127.0.0.1 /Permission/edit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '123' AND `id` <> '3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `parent_id` FROM `permission` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 3 [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 0 [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getOne() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 310 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 155 行.
+SQL: SELECT MAX(rght) FROM permission [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 469 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: 
+				UPDATE permission
+				SET
+					lft = IF(
+						rght <= 2,
+						lft + 8,
+						IF(
+							lft > 2,
+							lft - 2, lft
+						)
+					),
+					lvl = IF(
+						rght <= 2,
+						lvl + 0,
+						lvl
+					),
+					rght = IF(
+						rght <= 2,
+						rght + 8,
+						IF(
+							rght <= 10,
+							rght - 2,
+							rght
+						)
+					),
+					parent_id = IF(
+						id = 3,
+						0,
+						parent_id
+					)
+				WHERE
+					rght > 1
+					AND lft <= 10 [ RunTime:0.0003s ]
+SQL: UPDATE `permission` SET `name`='123',`parent_id`='0',`permission_url`='' WHERE `id` = 3 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-08-16T14:38:42+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-08-16T14:38:43+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2016-08-16T14:38:59+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-08-16T14:38:59+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2016-08-16T14:39:00+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-08-16T14:39:19+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-08-16T14:39:20+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-08-16T14:39:24+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 0 [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getOne() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 195 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 155 行.
+SQL: SELECT MAX(rght) FROM permission [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 224 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 1, lft + 2, lft) WHERE rght >= 1 [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::insert() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 232 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 69 行.
+SQL: INSERT INTO permission SET name="1",parent_id="0",permission_url="",lft="1",rght="2",lvl="1" [ RunTime:0.3055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-08-16T14:39:25+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2016-08-16T14:39:26+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-08-16T14:39:28+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '2' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 1 [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 206 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT rght, lft, lvl FROM permission WHERE id = 1 [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 224 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 2, lft + 2, lft) WHERE rght >= 2 [ RunTime:0.2656s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::insert() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 232 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 69 行.
+SQL: INSERT INTO permission SET name="2",parent_id="1",permission_url="",lft="2",rght="3",lvl="2" [ RunTime:0.0999s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-08-16T14:39:30+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-08-16T14:39:37+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `permission` ORDER BY lft desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-08-16T14:39:38+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-08-16T14:39:38+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-08-16T14:39:41+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-08-16T14:39:43+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `permission` WHERE `name` = '2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+
+[ 2016-08-16T14:39:45+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-08-16T14:40:04+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 0 [ RunTime:0.0004s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getOne() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 195 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 155 行.
+SQL: SELECT MAX(rght) FROM permission [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 224 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 5, lft + 2, lft) WHERE rght >= 5 [ RunTime:0.0003s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::insert() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 232 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 69 行.
+SQL: INSERT INTO permission SET name="2",parent_id="0",permission_url="",lft="5",rght="6",lvl="1" [ RunTime:0.0933s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-08-16T14:40:05+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-08-16T14:40:12+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-08-16T14:40:16+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 3 [ RunTime:0.0004s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 206 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT rght, lft, lvl FROM permission WHERE id = 3 [ RunTime:0.0002s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 224 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 6, lft + 2, lft) WHERE rght >= 6 [ RunTime:0.0703s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::insert() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 232 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 69 行.
+SQL: INSERT INTO permission SET name="1",parent_id="3",permission_url="",lft="6",rght="7",lvl="2" [ RunTime:0.0419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-08-16T14:40:17+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-08-16T14:40:18+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 15 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+NOTIC: [8] Undefined variable: data F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-08-16T14:40:21+08:00 ] 127.0.0.1 /Permission/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\rbac\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 572 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT parent_id, lft, rght, lvl FROM permission WHERE id = 1 [ RunTime:0.0005s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::getRow() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 206 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 119 行.
+SQL: SELECT rght, lft, lvl FROM permission WHERE id = 1 [ RunTime:0.0004s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::query() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 224 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 44 行.
+SQL: UPDATE permission SET rght = rght + 2, lft = IF(lft >= 4, lft + 2, lft) WHERE rght >= 4 [ RunTime:0.0780s ]
+NOTIC: [4096] Argument 2 passed to Admin\Logic\NestedsetsLogic::insert() must be of the type array, string given, called in F:\www\rbac\Application\Admin\Logic\NestedSets.class.php on line 232 and defined F:\www\rbac\Application\Admin\Logic\NestedsetsLogic.class.php 第 69 行.
+SQL: INSERT INTO permission SET name="1",parent_id="1",permission_url="",lft="4",rght="5",lvl="2" [ RunTime:0.0753s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-08-16T14:40:22+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-08-16T14:40:23+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-08-16T14:42:55+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2016-08-16T14:42:56+08:00 ] 127.0.0.1 /Role/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0021s ]
+SQL: DELETE FROM `role` WHERE `id` = 3 [ RunTime:0.0004s ]
+
+[ 2016-08-16T14:42:58+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-08-16T14:43:00+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-08-16T14:43:00+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-08-16T14:43:06+08:00 ] 127.0.0.1 /Role/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0014s ]
+SQL: DELETE FROM `role` WHERE `id` = 4 [ RunTime:0.0003s ]
+
+[ 2016-08-16T14:43:07+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-08-16T14:43:54+08:00 ] 127.0.0.1 /Permission/edit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `permission` WHERE `id` <> '4' AND `parent_id` <> '4' ORDER BY lft asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `permission` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: url F:\www\rbac\Application\Runtime\Cache\Admin\39af729f11b1c4551e8b8670d9622d78.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2016-08-16T14:44:05+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-08-16T14:44:13+08:00 ] 127.0.0.1 /Permission/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `permission` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `permission` ORDER BY lft asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2016-08-16T14:44:16+08:00 ] 127.0.0.1 /Role/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0022s ]
+SQL: DELETE FROM `role` WHERE `id` = 4 [ RunTime:0.0003s ]
+
