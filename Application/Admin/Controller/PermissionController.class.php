@@ -63,9 +63,7 @@ class PermissionController extends Controller
     public function del($id)
     {
         $res = $this->_model->deletePermission($id);
-        var_dump($res);
-        exit;
-        if ($res == false) {
+        if ($res === false) {
             $this->ajaxReturn('fail');
             exit;
         }

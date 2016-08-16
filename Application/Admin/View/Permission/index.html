@@ -10,12 +10,14 @@
             <tr>
                 <th>id</th>
                 <th>name</th>
+                <th>url</th>
                 <th>操作</th>
             </tr>
             <volist name="datas" id="data">
                 <tr class="treegrid-{$data.id} <neq name='data.parent_id' value='0'>treegrid-parent-{$data.parent_id}</neq>">
                     <td>{$data.id}</td>
                     <td>{$data.name}</td>
+                    <td>{$data.permission_url}</td>
                     <td>
                         <a href="{:U('Permission/edit',['id'=>$data['id']])}" class="btn btn-info">修改</a>
                         <a href="javascript:;" class="btn btn-danger del" role_id="{$data.id}">删除</a>

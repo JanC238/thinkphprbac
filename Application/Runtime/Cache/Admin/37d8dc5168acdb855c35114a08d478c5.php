@@ -7,7 +7,6 @@
 
 
 <body>
-<a href="<?php echo U('Admin/logout');?>" class="btn btn-info pull-right">退出</a>
 
     <a href="<?php echo U('add');?>" class="btn btn-info pull-right">添加</a>
     <div class="col-lg-4"></div>
@@ -16,11 +15,13 @@
             <tr>
                 <th>id</th>
                 <th>name</th>
+                <th>url</th>
                 <th>操作</th>
             </tr>
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="treegrid-<?php echo ($data["id"]); ?> <?php if(($data["parent_id"]) != "0"): ?>treegrid-parent-<?php echo ($data["parent_id"]); endif; ?>">
                     <td><?php echo ($data["id"]); ?></td>
                     <td><?php echo ($data["name"]); ?></td>
+                    <td><?php echo ($data["permission_url"]); ?></td>
                     <td>
                         <a href="<?php echo U('Permission/edit',['id'=>$data['id']]);?>" class="btn btn-info">修改</a>
                         <a href="javascript:;" class="btn btn-danger del" role_id="<?php echo ($data["id"]); ?>">删除</a>
@@ -40,7 +41,7 @@
             $('.del').click(function () {
                 var obj = $(this);
                 var id = obj.attr('role_id');
-                var url = "<?php echo U('Role/del');?>";
+                var url = "<?php echo U('Permission/del');?>";
                 $.post(url, {id: id}, function (response) {
                     if (response == 'success') {
                         obj.parent().parent().fadeOut();

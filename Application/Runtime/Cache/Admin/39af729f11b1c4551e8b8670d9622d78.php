@@ -7,7 +7,6 @@
 
 
 <body>
-<a href="<?php echo U('Admin/logout');?>" class="btn btn-info pull-right">退出</a>
 
     <form action="#" method="post">
         <div class="form-group">
@@ -15,14 +14,14 @@
             <input type="text" class="form-control" name="name" value="<?php echo ($data["name"]); ?>" placeholder="name">
         </div>
         <div class="form-group">
-            <input type="hidden" name="parent_id" id="parent_id">
+            <input type="hidden" name="parent_id" id="parent_id" value="<?php echo ($data["parent_id"]); ?>">
             <label for="parent_name">请选择父级分类</label>
             <input type="text" disabled="disabled" id="parent_name" class="form-control" value="请选择">
             <ul id="permission" class="ztree"></ul>
         </div>
         <div class="form-group">
             <label>url</label>
-            <input type="text" class="form-control" name="permission_url" value="<?php echo ($data["url"]); ?>" placeholder="url">
+            <input type="text" class="form-control" name="permission_url" value="<?php echo ($data["permission_url"]); ?>" placeholder="url">
         </div>
         <input type="hidden" name="id" value="<?php echo ($data["id"]); ?>">
         <button type="submit" class="btn btn-default">Submit</button>

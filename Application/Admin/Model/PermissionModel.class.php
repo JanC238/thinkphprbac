@@ -77,7 +77,7 @@ class PermissionModel extends Model
         $orm = D('Nestedsets', 'Logic');
         //>>创建nestedsets对象
         $nestedsets = new NestedSets($orm, $this->trueTableName, 'lft', 'rght', 'parent_id', 'id', 'lvl');
-        if ($nestedsets->delete($id) == false) {
+        if ($nestedsets->delete($id) === false) {
             $this->error = $this->getError();
             return false;
         }

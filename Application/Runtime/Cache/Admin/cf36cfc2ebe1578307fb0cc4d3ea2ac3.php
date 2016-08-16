@@ -5,7 +5,6 @@
 
 
 <body>
-<a href="<?php echo U('Admin/logout');?>" class="btn btn-info pull-right">退出</a>
 
     <form action="#" method="post">
         <div class="form-group">
